@@ -8,6 +8,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -22,7 +23,7 @@ fun TestScreen(){
   ) {
       Text(
           text = "hello",
-          style = TextStyle(fontSize = 30.sp)
+          style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Thin)
       )
   }
 
