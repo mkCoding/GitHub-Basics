@@ -23,7 +23,7 @@ fun TestScreen(){
   ) {
       Text(
           text = "hello",
-          style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
+          style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Thin)
       )
   }
 
