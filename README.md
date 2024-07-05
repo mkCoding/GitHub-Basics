@@ -10,7 +10,7 @@
 2.) ```git branch -d feature-1``` <br/>
 
 <b>Merge branch to main:</b><br/>
-1.) ```git checkout main``` <br/>
+1.) ```git checkout [base-branch]``` <br/>
 2.) ```git merge feature-a``` (merge) <br/>
 
 <b>Show commit history:</b> ```git log --oneline```
