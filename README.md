@@ -13,4 +13,9 @@
 1.) ```git checkout main``` <br/>
 2.) ```git merge feature-a``` (merge) <br/>
 
+<b>Commit to your branch:</b><br/>
+1.) ```git add .``` <br/>
+2.)```git commit -m "commit message"``` <br/>
+3.) ```git push -u origin my-feature-branch``` <br/>
+
 <b>Show commit history:</b> ```git log --oneline```
