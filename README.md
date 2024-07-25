@@ -18,4 +18,7 @@
 2.)```git commit -m "commit message"``` <br/>
 3.) ```git push -u origin my-feature-branch``` <br/>
 
+<b>Removes all references to branches that have been deleted from the remote repository.</b><br/>
+1.) ```git remote prune origin``` <br/><br/>
+
 <b>Show commit history:</b> ```git log --oneline```
