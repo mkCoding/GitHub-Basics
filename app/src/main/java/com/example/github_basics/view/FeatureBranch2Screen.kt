@@ -20,9 +20,8 @@ fun FeatureBranchScreen2(){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Feature Branch Screen 2")
-
+        Text(text = "Hello World 2")
     }
-
 }
 
 @Preview(showBackground = true)
