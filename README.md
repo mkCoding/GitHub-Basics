@@ -21,4 +21,8 @@
 <b>Removes all references to branches that have been deleted from the remote repository.</b><br/>
 1.) ```git remote prune origin``` <br/><br/>
 
+<b>Cleans Working directory [Ensure that no untracked files are present in your working directory]</b><br/>
+1.) ```git clean -fd``` 
+
+
 <b>Show commit history:</b> ```git log --oneline```
