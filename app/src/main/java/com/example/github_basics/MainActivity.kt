@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.github_basics.ui.theme.GitHubBasicsTheme
 import com.example.github_basics.view.FeatureBranch1Screen
+import com.example.github_basics.view.FeatureBranch4Screen
 import com.example.github_basics.view.FeatureBranchScreen2
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    FeatureBranchScreen2()
+                    FeatureBranch4Screen()
                 }
             }
         }
