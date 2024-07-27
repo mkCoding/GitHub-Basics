@@ -21,6 +21,7 @@ fun FeatureBranchScreen2(){
     ) {
         Text(text = "Feature Branch Screen 2")
         Text(text = "Hello World 2")
+        Text(text = "Goodbye World 2")
     }
 }
 
