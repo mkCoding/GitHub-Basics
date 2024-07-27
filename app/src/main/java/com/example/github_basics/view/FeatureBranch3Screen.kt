@@ -19,7 +19,7 @@ fun FeatureBranch3Screen(){
             .padding(16.dp)
     ) {
         Text(text = "Feature Branch Screen 3")
-        Text(text = "New Data")
+        Text(text = "New Info")
     }
 }
 
