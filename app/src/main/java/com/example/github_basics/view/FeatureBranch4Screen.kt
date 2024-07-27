@@ -30,7 +30,7 @@ fun FeatureBranch4Screen(){
         verticalArrangement = Arrangement.Center
     ){
         Button(onClick = {
-            displayText = "Wow you just clicked the button"
+            displayText = "Wow"
         }) {
             Text(text = "Click Me Now!")
         }
