@@ -33,6 +33,7 @@ fun FeatureBranch4Screen(){
             displayText = "Wow you just clicked the button just now 4!!!!"
         }) {
             Text(text = "Click Me Now!")
+            Text(text = "Test Branch text")
         }
 
         Spacer(modifier = Modifier.height(16.dp))
