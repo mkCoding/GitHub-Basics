@@ -14,6 +14,7 @@ import com.example.github_basics.ui.theme.GitHubBasicsTheme
 import com.example.github_basics.view.FeatureBranch1Screen
 import com.example.github_basics.view.FeatureBranch4Screen
 import com.example.github_basics.view.FeatureBranchScreen2
+import com.example.github_basics.view.PracticeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    FeatureBranch4Screen()
+                    PracticeScreen()
                 }
             }
         }
