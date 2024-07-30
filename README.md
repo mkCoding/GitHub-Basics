@@ -7,7 +7,8 @@
 
 <b>Delete Branch:</b> <br/>
 1.) ```git checkout [base-branch]``` <br/>
-2.) ```git branch -d feature-1``` <br/>
+2.) ```git branch -d feature-1``` (local)<br/>
+3.) ```git push origin --delete feature-1```(remote) </br>
 
 <b>Merge branch to main:</b><br/>
 1.) ```git checkout main``` <br/>
@@ -25,4 +26,26 @@
 1.) ```git clean -fd``` 
 
 
-<b>Show commit history:</b> ```git log --oneline```
+<b>Show commit history:</b> ```git log --oneline``
+
+<b><ins>Incorporate your feature branch changes into development</ins></b> <br/>
+1.) ```git pull development```<br/>
+2.) ```git branch feature-branch```<br/>
+3.) Make some changes to your feature branch<br/>
+4.) ```git add .```<br/>
+5.) ```git commit -m "added some changes"```<br/>
+6.) ```git push -u origin feature-branch```<br/>
+7.) ```git checkout development```<br/>
+8.) ```git pull (pull latest changes)```<br/>
+9.) ```git checkout feature-branch```<br/>
+10.) ```git rebase development```<br/>
+11.) ```Resolve merge conflicts (if applicable)```<br/>
+12.) Run app to ensure everything is fine<br/>
+13.) ```git push -f``` (push integrated development changes to your remote feature branch)<br/>
+
+<b>Merge or Rebase your features back into development</b><br/>
+14.) ```git checkout development``` (merge the updated code back into development<br/>
+15.) ```git merge/rebase feature-branch```<br/>
+16.) ```git push```<br/>
+
+14 - 16 can also be done via GitHub via Pull request to review changes before the merge
