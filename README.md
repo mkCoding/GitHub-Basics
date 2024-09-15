@@ -1,9 +1,10 @@
 
 <b>GitHub Branching Commands</b>
 
-<b>Create Branch:</b> ```git branch feature-1``` </br>
+<b>Create Branch:</b> ```git branch <new-branch-name>``` </br>
 <b>View all branches:</b> ```git branch -a``` </br>
-<b>Switch Branch:</b> ```git checkout feature-1``` </br>
+<b>Switch Branch:</b> ```git checkout <new-branch-name>``` </br>
+<b>Rename current branch:</b> ```git branch -m <new-branch-name>```
 
 <b>Delete Branch:</b> <br/>
 1.) ```git checkout [base-branch]``` <br/>
