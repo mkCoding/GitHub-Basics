@@ -50,3 +50,23 @@
 16.) ```git push```<br/>
 
 14 - 16 can also be done via GitHub via Pull request to review changes before the merge
+
+
+<b><ins>Troubleshooting Git</ins></b> <br/>
+
+<b>Issue #1</b><br>
+After performing <b>git pull</b>  you get this error:  
+```cannot lock ref 'refs/remotes/origin/xxxxx/xxxx'....```
+
+ <b>Solution:</b> ```git remote prune origin```
+
+
+
+
+
+
+
+
+
+
+
