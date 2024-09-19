@@ -50,3 +50,28 @@
 16.) ```git push```<br/>
 
 14 - 16 can also be done via GitHub via Pull request to review changes before the merge
+
+
+<b><ins>How to Abort the rebase and restore the branch to its original state.</ins></b> <br>
+```git rebase --abort```
+
+
+
+<b><ins>Troubleshooting Git</ins></b> <br/>
+
+<b>Issue #1</b><br>
+After performing <b>git pull</b>  you get this error:  
+```cannot lock ref 'refs/remotes/origin/xxxxx/xxxx'....```
+
+ <b>Solution:</b> ```git remote prune origin```
+
+
+
+
+
+
+
+
+
+
+
