@@ -83,6 +83,11 @@ fun MyCard() {
                 style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
             )
 
+            Text(
+                text = "My car is fast!!!",
+                style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
+            )
+
         }
     }
 }
