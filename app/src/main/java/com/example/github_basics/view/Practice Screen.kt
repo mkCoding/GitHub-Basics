@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun PracticeScreen(){
+fun PracticeScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -51,7 +51,7 @@ fun PracticeScreen(){
 }
 
 @Composable
-fun MyCard(){
+fun MyCard() {
     Card(
         colors = CardDefaults.cardColors(Color.Red),
         modifier = Modifier
@@ -66,7 +66,15 @@ fun MyCard(){
         ) {
             Text(
                 text = "This is my Card today",
-                style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold))
+                style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
+            )
+            Text(
+                text = "Its Thursday!!!",
+                style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
+            )
+
+
+
 
         }
     }
@@ -74,6 +82,6 @@ fun MyCard(){
 
 @Preview(showBackground = true)
 @Composable
-fun PreviewPracticeScreen(){
+fun PreviewPracticeScreen() {
     PracticeScreen()
 }
