@@ -69,7 +69,7 @@ fun MyCard() {
                 style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
             )
             Text(
-                text = "Its Thursday!!!",
+                text = "Its Almost Friday!!!",
                 style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
             )
 
