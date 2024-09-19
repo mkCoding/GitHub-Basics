@@ -17,6 +17,23 @@ fun PracticeScreen(){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Practice Now!")
+        Text(text = "John Jones!")
+        Text(text = "Izzy Black!")
+        Text(text = "Tony Tiger!")
+        Text(text = "Practice Now!")
+        Text(text = "Sue Ellen!")
+        Text(text = "Bill Ding!")
+        Text(text = "Tay Bull!")
+        Text(text = "Sally Waltz!")
+        Text(text = "Peter Pan!")
+        Text(text = "Lacey Green!")
+        Text(text = "Kung Pow!")
+        Text(text = "Safety Cone!")
+        Text(text = "Moon Shine!")
+        Text(text = "Glenn Beck!")
+        Text(text = "Jack Jumping!")
+        Text(text = "Daisy Flower!")
+
     }
 }
 
