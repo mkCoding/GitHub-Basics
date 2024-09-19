@@ -25,6 +25,12 @@ fun TestScreen(){
           text = "hello",
           style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Thin)
       )
+
+      Text(
+          text = "world",
+          style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Thin)
+      )
+
   }
 
 }
