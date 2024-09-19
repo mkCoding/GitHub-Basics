@@ -65,8 +65,8 @@ fun MyCard(){
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "This is my Card",
-                style = TextStyle(fontSize = 40.sp, fontWeight = FontWeight.Bold))
+                text = "This is my Card today",
+                style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold))
 
         }
     }
