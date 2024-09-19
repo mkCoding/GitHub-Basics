@@ -73,8 +73,10 @@ fun MyCard() {
                 style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
             )
 
-
-
+            Text(
+                text = "My lion is shy",
+                style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold)
+            )
 
         }
     }
