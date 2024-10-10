@@ -65,6 +65,16 @@ After performing <b>git pull</b>  you get this error:
 
  <b>Solution:</b> ```git remote prune origin```
 
+ <b>Issue #2</b><br/>
+ After performing a ```git push -f``` or ```git push -u origin your-feature-branch``` you get this:<br>
+ ```the upstream branch of your current branch does not match the name of your current branch```<br><br>
+ <b>Solution:</b> <br>
+ Your local and remote branch have different names<br><br>
+ <b>2 possible solutions</b><br>
+ 1.) rename your <b>local branch</b> to same name as <b>remote branch</b><br/>
+ 2.) delete the <b>remote branch</b> and push again
+ 
+
 
 
 
