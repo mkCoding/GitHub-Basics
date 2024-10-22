@@ -53,9 +53,10 @@
 
 
 <b><ins>How to Abort the rebase and restore the branch to its original state.</ins></b> <br>
-```git rebase --abort```
+```git rebase --abort``` <br>
 
-
+<b>Fetch the branch branch_name from the remote (origin) and creates a corresponding local branch with the same name.</b> <br>
+```git fetch origin branch_name:branch_name```<br><br>
 
 <b><ins>Troubleshooting Git</ins></b> <br/>
 
