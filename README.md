@@ -58,6 +58,10 @@
 <b>Fetch the branch branch_name from the remote (origin) and creates a corresponding local branch with the same name.</b> <br>
 ```git fetch origin branch_name:branch_name```<br><br>
 
+<b><ins>Your remote branch has been rebased and you want changes from rebased remote branch on your local</ins></b> <br>
+1.) `git fetch origin`<br>
+2.) `git reset --hard origin/your-branch-name`
+
 <b><ins>Troubleshooting Git</ins></b> <br/>
 
 <b>Issue #1</b><br>
@@ -74,6 +78,8 @@ After performing <b>git pull</b>  you get this error:
  <b>2 possible solutions</b><br>
  1.) rename your <b>local branch</b> to same name as <b>remote branch</b><br/>
  2.) delete the <b>remote branch</b> and push again
+
+
  
 
 
