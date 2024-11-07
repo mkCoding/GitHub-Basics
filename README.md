@@ -59,8 +59,8 @@
 ```git fetch origin branch_name:branch_name```<br><br>
 
 <b><ins>Your remote branch has been rebased and you want changes from rebased remote branch on your local</ins></b> <br>
-1.) `git fetch origin`<br>
-2.) `git reset --hard origin/your-branch-name`
+1.) `git fetch origin` - Updates your local information about the remote branches without changing your working branch <br> 
+2.) `git reset --hard origin/your-branch-name` - `Forces your local branch to match the remote branch exactly, discarding any local changes or commits that differ from the remote branch`
 
 <b><ins>Troubleshooting Git</ins></b> <br/>
 
