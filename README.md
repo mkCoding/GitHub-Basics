@@ -6,6 +6,11 @@
 <b>Switch Branch:</b> ```git checkout <new-branch-name>``` </br>
 <b>Rename current branch:</b> ```git branch -m <new-branch-name>```
 
+<b>Fetch a Remote Branch into an Existing Local Repo</b></br>
+1.) ```git fetch origin <branch-name>``` (fetch the branch)</br>
+2.)```git checkout -b <branch-name> origin/<branch-name>``` (create and checkout the branch locally)</br>
+3.)```git branch``` (view the new local branch now on your machine)</br>
+
 <b>Delete Branch:</b> <br/>
 1.) ```git checkout [base-branch]``` <br/>
 2.) ```git branch -d feature-1``` (local)<br/>
