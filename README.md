@@ -50,11 +50,20 @@
 13.) ```git push -f``` (push integrated development changes to your remote feature branch)<br/>
 
 <b>Merge or Rebase your features back into development</b><br/>
-14.) ```git checkout development``` (merge the updated code back into development<br/>
-15.) ```git merge/rebase feature-branch```<br/>
+14.) ```git checkout development```<br/>
+15.) ```git merge/rebase feature-branch``` (merge the updated code back into development) <br/>
 16.) ```git push```<br/>
 
 14 - 16 can also be done via GitHub via Pull request to review changes before the merge
+
+<b><ins>You have uncommitted changes in a local branch and want to switch to another branch without passing over those changes</ins></b> <br>
+Step 1: You are on `branch-A` with uncommitted changes
+```git stash```              # Save changes and clean the working directory
+```git checkout branch-B```  # Switch to another branch (e.g., branch-B)
+
+Step 2: Work on `branch-B` and then return to `branch-A`
+```git checkout branch-A```  # Switch back to the original branch
+```git stash apply```        # Restore the stashed changes on `branch-A`
 
 
 <b><ins>How to Abort the rebase and restore the branch to its original state.</ins></b> <br>
