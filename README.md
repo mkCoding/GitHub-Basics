@@ -1,5 +1,7 @@
 
-<b>GitHub Branching Commands</b>
+# Github Basics<br><br>
+
+## GitHub Branching Commands
 
 <b>Create Branch:</b> ```git branch <new-branch-name>``` </br>
 <b>View all branches:</b> ```git branch -a``` </br>
@@ -34,6 +36,7 @@
 
 <b>Show commit history:</b> ```git log --oneline``
 
+## Rebasing and Merging
 <b><ins>Incorporate your feature branch changes into development</ins></b> <br/>
 1.) ```git pull development```<br/>
 2.) ```git branch feature-branch```<br/>
@@ -57,13 +60,13 @@
 14 - 16 can also be done via GitHub via Pull request to review changes before the merge
 
 <b><ins>You have uncommitted changes in a local branch and want to switch to another branch without passing over those changes</ins></b> <br>
-Step 1: You are on `branch-A` with uncommitted changes
-```git stash```              # Save changes and clean the working directory
-```git checkout branch-B```  # Switch to another branch (e.g., branch-B)
+Step 1: You are on `branch-A` with uncommitted changes<br>
+```git stash```              # Save changes and clean the working directory<br>
+```git checkout branch-B```  # Switch to another branch (e.g., branch-B)<br>
 
-Step 2: Work on `branch-B` and then return to `branch-A`
-```git checkout branch-A```  # Switch back to the original branch
-```git stash apply```        # Restore the stashed changes on `branch-A`
+Step 2: Work on `branch-B` and then return to `branch-A` <br>
+```git checkout branch-A```  # Switch back to the original branch<br>
+```git stash apply```        # Restore the stashed changes on `branch-A`<br>
 
 
 <b><ins>How to Abort the rebase and restore the branch to its original state.</ins></b> <br>
@@ -76,7 +79,7 @@ Step 2: Work on `branch-B` and then return to `branch-A`
 1.) `git fetch origin` - Updates your local information about the remote branches without changing your working branch <br> 
 2.) `git reset --hard origin/your-branch-name` - `Forces your local branch to match the remote branch exactly, discarding any local changes or commits that differ from the remote branch`
 
-<b><ins>Troubleshooting Git</ins></b> <br/>
+## Troubleshooting Git</ins></b><br>
 
 <b>Issue #1</b><br>
 After performing <b>git pull</b>  you get this error:  
@@ -86,7 +89,11 @@ After performing <b>git pull</b>  you get this error:
 
  <b>Issue #2</b><br/>
  After performing a ```git push -f``` or ```git push -u origin your-feature-branch``` you get this:<br>
- ```the upstream branch of your current branch does not match the name of your current branch```<br><br>
+ 
+ ```
+ the upstream branch of your current branch does not match the name of your current branch
+```
+ 
  <b>Solution:</b> <br>
  Your local and remote branch have different names<br><br>
  <b>2 possible solutions</b><br>
