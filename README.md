@@ -1,5 +1,7 @@
 
-<b>GitHub Branching Commands</b>
+# Github Basics<br><br>
+
+## GitHub Branching Commands
 
 <b>Create Branch:</b> ```git branch <new-branch-name>``` </br>
 <b>View all branches:</b> ```git branch -a``` </br>
@@ -34,6 +36,7 @@
 
 <b>Show commit history:</b> ```git log --oneline``
 
+## Rebasing and Merging
 <b><ins>Incorporate your feature branch changes into development</ins></b> <br/>
 1.) ```git pull development```<br/>
 2.) ```git branch feature-branch```<br/>
@@ -50,15 +53,42 @@
 13.) ```git push -f``` (push integrated development changes to your remote feature branch)<br/>
 
 <b>Merge or Rebase your features back into development</b><br/>
-14.) ```git checkout development``` (merge the updated code back into development<br/>
-15.) ```git merge/rebase feature-branch```<br/>
+14.) ```git checkout development```<br/>
+15.) ```git merge/rebase feature-branch``` (merge the updated code back into development) <br/>
 16.) ```git push```<br/>
 
 14 - 16 can also be done via GitHub via Pull request to review changes before the merge
 
-
 <b><ins>How to Abort the rebase and restore the branch to its original state.</ins></b> <br>
 ```git rebase --abort``` <br>
+
+
+## Stash
+
+<b>Stash:</b> Temporarily save your changes without committing them to a branch<br>
+
+<b>Commands: </b><br>
+- ```git stash``` -> save changes without committing them to a branch <br>
+- ```git stash save "Your stash message here"``` -> save changes with a message<br>
+- ```git stash list``` -> list all stashes <br>
+- ```git stash apply``` -> Reapply the most recent stash <br>
+- ```git stash apply stash@{n}```-> Reapply a specific stash from list <br>
+- ```git stash drop``` -> Remove latest stash<br>
+- ```git stash drop stash@{n}``` -> Remove specific stash from list<br>
+- ```git stash clear``` -> clear all stashes<br>
+- ```git stash branch <branch-name>``` -> Create a new branch from a stash<br>
+
+
+<b><ins>You have uncommitted changes in a local branch and want to switch to another branch without passing over those changes</ins></b> <br>
+Step 1: You are on `branch-A` with uncommitted changes<br>
+```git stash```              # Save changes and clean the working directory<br>
+```git checkout branch-B```  # Switch to another branch (e.g., branch-B)<br>
+
+Step 2: Work on `branch-B` and then return to `branch-A` <br>
+```git checkout branch-A```  # Switch back to the original branch<br>
+```git stash apply```        # Restore the stashed changes on `branch-A`<br>
+
+
 
 <b>Fetch the branch branch_name from the remote (origin) and creates a corresponding local branch with the same name.</b> <br>
 ```git fetch origin branch_name:branch_name```<br><br>
@@ -67,7 +97,7 @@
 1.) `git fetch origin` - Updates your local information about the remote branches without changing your working branch <br> 
 2.) `git reset --hard origin/your-branch-name` - `Forces your local branch to match the remote branch exactly, discarding any local changes or commits that differ from the remote branch`
 
-<b><ins>Troubleshooting Git</ins></b> <br/>
+## Troubleshooting Git</ins></b><br>
 
 <b>Issue #1</b><br>
 After performing <b>git pull</b>  you get this error:  
@@ -77,9 +107,14 @@ After performing <b>git pull</b>  you get this error:
 
  <b>Issue #2</b><br/>
  After performing a ```git push -f``` or ```git push -u origin your-feature-branch``` you get this:<br>
- ```the upstream branch of your current branch does not match the name of your current branch```<br><br>
- <b>Solution:</b> <br>
+ 
+ ```
+ the upstream branch of your current branch does not match the name of your current branch
+```
+ 
+ <b>Explaination:</b> <br>
  Your local and remote branch have different names<br><br>
+ 
  <b>2 possible solutions</b><br>
  1.) rename your <b>local branch</b> to same name as <b>remote branch</b><br/>
  2.) delete the <b>remote branch</b> and push again
