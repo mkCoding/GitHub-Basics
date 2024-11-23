@@ -7,4 +7,5 @@ import androidx.compose.runtime.Composable
 fun FeatureAScreen() {
 
     Text(text = "Feature A")
+    Text(text = "My New Text A")
 }
