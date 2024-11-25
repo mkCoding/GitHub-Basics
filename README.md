@@ -77,6 +77,7 @@
 - ```git stash drop stash@{n}``` -> Remove specific stash from list<br>
 - ```git stash clear``` -> clear all stashes<br>
 - ```git stash branch <branch-name>``` -> Create a new branch from a stash<br>
+- ```git restore .``` -> This will reset your working directory to the last committed state.
 
 
 <b><ins>You have uncommitted changes in a local branch and want to switch to another branch without passing over those changes</ins></b> <br>
@@ -89,6 +90,10 @@ Step 2: Work on `branch-B` and then return to `branch-A` <br>
 ```git stash apply```        # Restore the stashed changes on `branch-A`<br>
 
 
+## Git Reset Hard
+
+- ```git reset --hard``` -> resets your working directory, staging area, and current branch to a specific commit(latest commit by default)<br>
+- ```git reset --hard [commit-hash]``` -> Resets to the specified commit in the commit history
 
 <b>Fetch the branch branch_name from the remote (origin) and creates a corresponding local branch with the same name.</b> <br>
 ```git fetch origin branch_name:branch_name```<br><br>
