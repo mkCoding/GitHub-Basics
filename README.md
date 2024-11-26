@@ -102,6 +102,22 @@ Step 2: Work on `branch-B` and then return to `branch-A` <br>
 1.) `git fetch origin` - Updates your local information about the remote branches without changing your working branch <br> 
 2.) `git reset --hard origin/your-branch-name` - `Forces your local branch to match the remote branch exactly, discarding any local changes or commits that differ from the remote branch`
 
+## Cherry Pick
+Define: to take a single commit from one branch and adding it as the latest commit on another branch
+
+Commands:
+- ```git cherry-pick <commit-hash>``` -> cherry pick a specific commit
+- Process for cherry picking:
+1. ```git checkout parent-branch``` -> checkout parent branch
+2. ```git pull origin parent-branch``` -> Ensure you're up to date
+3. ```git checkout -b new-branch``` -> Create and checkout the new branch
+4. ```git checkout <other-branch>``` -> checkout branch you want to pick commits from
+5. ```git log --oneline``` -> view all commits on the this branch (candidates/commits for cherry picking)
+6. ```git cherry-pick <commit-hash>``` or ```git cherry-pick <commit-hash-1> <commit-hash-2> <commit-hash-3>```
+7. ``git push origin <new-branch>```
+  
+
+
 ## Troubleshooting Git</ins></b><br>
 
 <b>Issue #1</b><br>
