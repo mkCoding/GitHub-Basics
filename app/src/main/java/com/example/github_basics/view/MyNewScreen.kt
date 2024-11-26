@@ -21,6 +21,8 @@ fun MyNewScreen(){
 
         Text(text = "Hello World", style = TextStyle(fontSize = 40.sp))
         Text(text = "Good Bye World", style = TextStyle(fontSize = 40.sp))
+        Text(text = "New World", style = TextStyle(fontSize = 40.sp))
+
     }
 
 }
