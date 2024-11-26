@@ -23,6 +23,7 @@ fun MyNewScreen(){
         Text(text = "Good Bye World", style = TextStyle(fontSize = 40.sp))
         Text(text = "New World", style = TextStyle(fontSize = 40.sp))
         Text(text = "Night World", style = TextStyle(fontSize = 40.sp))
+        Text(text = "Sun World", style = TextStyle(fontSize = 40.sp))
 
     }
 
