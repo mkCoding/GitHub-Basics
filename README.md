@@ -62,12 +62,19 @@
 <b><ins>How to Abort the rebase and restore the branch to its original state.</ins></b> <br>
 ```git rebase --abort``` <br>
 
+## Pull
+<b>Pull:</b> Fetch and download content from a remote repository and immediately update the local repository to match that content. <br>
+
+<b>Commands: </b><br>
+- ```git pull```<br>
+- ```git pull origin <branch-name>```<br>
+
 
 ## Stash
 
 <b>Stash:</b> Temporarily save your changes without committing them to a branch<br>
 
-<b>Commands: </b><br>
+<b>Commands: </b>
 - ```git stash``` -> save changes without committing them to a branch <br>
 - ```git stash save "Your stash message here"``` -> save changes with a message<br>
 - ```git stash list``` -> list all stashes <br>
