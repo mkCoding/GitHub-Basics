@@ -34,7 +34,7 @@
 1.) ```git clean -fd``` 
 
 
-<b>Show commit history:</b> ```git log --oneline``
+<b>Show commit history:</b> ```git log --oneline```
 
 ## Rebasing and Merging
 <b><ins>Incorporate your feature branch changes into development</ins></b> <br/>
