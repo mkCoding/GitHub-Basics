@@ -77,6 +77,7 @@
 <b>Commands: </b>
 - ```git stash``` -> save changes without committing them to a branch <br>
 - ```git stash push -m "Your comment here"``` -> stash changes with a message<br>
+- ```git stash push -u -m "Your comment here"```-> stash tracked and untracked files with a message<br>
 - ```git stash list``` -> list all stashes <br>
 - ```git stash apply``` -> Reapply the most recent stash <br>
 - ```git stash apply stash@{n}```-> Reapply a specific stash from list <br>
