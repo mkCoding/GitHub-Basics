@@ -149,6 +149,23 @@ After performing <b>git pull</b>  you get this error:
  2.) delete the <b>remote branch</b> and push again
 
 
+ <b>Issue #3</b><br/>
+
+You wish to sync the updated remote branch with your local branch. After performing a git pull origin <branch-name> you get this:<br>
+```You have divergent branches and need to specify how to reconcile them.```
+
+ <b>Explaination:</b> <br>
+ The branch you're trying to pull from has changes that your local branch doesn't have, and your local branch also has<br>
+ commits that the remote branch doesn't have. <br><br>
+
+  <b>Solution </b><br>
+ 1.) ```git fetch origin``` -> Get all the latest updates from the remote repository without merging them into your local branch<br>
+ 2.) ```git reset --hard origin/your-branch-name``` -> reset your local branch to exactly match the remote branch (origin/your-branch-name).
+
+ 
+
+
+
  
 
 
