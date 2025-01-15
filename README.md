@@ -15,8 +15,8 @@
 
 <b>Delete Branch:</b> <br/>
 1.) ```git checkout [base-branch]``` <br/>
-2.) ```git branch -d feature-1``` (local)<br/>
-3.) ```git push origin --delete feature-1```(remote) </br>
+2.) ```git branch -d [branch-to-delete]``` (local)<br/>
+3.) ```git push origin --delete [branch-to-delete]```(remote) </br>
 
 <b>Merge branch to main:</b><br/>
 1.) ```git checkout main``` <br/>
