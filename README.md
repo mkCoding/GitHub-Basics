@@ -68,6 +68,7 @@
 <b>Commands: </b><br>
 - ```git pull```<br>
 - ```git pull origin <branch-name>```<br>
+- ```git pull --rebase``` - if there are changes on branch that have been rebased then use this
 
 
 ## Stash
