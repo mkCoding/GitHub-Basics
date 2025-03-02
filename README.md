@@ -6,6 +6,7 @@
 <b>Create Branch:</b> ```git branch <new-branch-name>``` </br>
 <b>View all branches:</b> ```git branch -a``` </br>
 <b>Switch Branch:</b> ```git checkout <new-branch-name>``` </br>
+<b>Create and Switch to a new branch:</b> ```git checkout -b new_branch```</br>
 <b>Rename current branch:</b> ```git branch -m <new-branch-name>```
 
 <b>Fetch a Remote Branch into an Existing Local Repo</b></br>
